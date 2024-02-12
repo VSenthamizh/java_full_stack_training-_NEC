@@ -121,6 +121,118 @@ usage
 				orgname="NEC",countryName,cityName,schoolname,collegename,....static
 				
 				aadharno,contact,pan,accno,....instance
+package,import
 
 
 
+user defined 
+
+OOPS
+
+
+	inheritance,polymorphisam
+	abstraction ,encapsulation
+
+
+
+inheritance:Code Reusability
+
+extends,implementes
+
+class A
+{
+//20 variables
+//200 methods
+}
+
+class B extends A
+{
+//20 methods
+
+}
+
+By default parent class for every java class is java.lang.Object;
+By default package class for every java file is java.lang;
+
+
+
+MI not supported by java through classes
+MI  supported by java through interfaces
+
+
+	class Parent         class Parent1
+		{					{
+		m1()				m1()
+		{					{
+		12+13;				12-13;
+		}					}
+
+	}							}
+	
+	
+	class Child extends Parent,Parent1
+	{
+	
+	Child child1=new Child();
+		child1.m1();//25,-1
+		
+	
+	}
+	}
+	
+	
+	
+	
+		interface Parent       interface Parent1
+		{					{
+		m1();				m1();
+
+	}							}
+	
+	
+	class Child implements Parent,Parent1
+	{
+	
+	Child child1=new Child();
+		child1.m1();//25,-1
+		
+	
+	}
+	m1()
+	{
+	
+	}
+	}
+
+Abstraction:
+===========
+		hiding internal details by showcasing functionality-->secuirty
+
+		withdraw   balenq
+		pinchange  ministate
+	
+	concrete method:method with body/implementation
+	abstract method:method without body/implementation
+	
+		class		 :its collection of only concrete methods/non-abstract methods
+		
+		abstract class :its combination of both abstract and concrete	0-100%
+		
+		interfaces :its a collection of only abstract methods			100%
+		
+				by default interface methods public abstract 
+	
+Polymorphisam:-	
+	
+Method Overloading:	
+	method name is same  signature is different
+							no of params
+							order of params
+							type of params
+	
+method Overriding:
+
+	method name is same  body is different 
+
+
+final
