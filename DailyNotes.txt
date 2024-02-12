@@ -1,0 +1,126 @@
+
+Corejava:
+===========
+
+programming language:
+======================
+
+language:communication
+
+	communication with machine
+
+OOP
+	JAVA-->oops features-->inheritance,polymorphisam,abstraction,encapsulation
+	
+	
+	java 1996 23 jan
+	
+	
+	JDK 1.0
+	
+	21  -->James gosling
+	
+	sun micro system
+		-->oracle corporation
+	
+				JSE 			JEE           JME
+	
+1)standalone/desktop applications :corejava,awt,swings,applets..JSE
+2)web applications url			  :servlets,jsp,spring mvc,MVC...
+3)distributed applications		  :webservices
+4)mobile applications			  :android
+	
+	
+	welcome to java 
+	
+	
+	java 
+	
+			.java
+	
+	
+	
+	Platform independent:WORA
+	Garbage collection
+	
+	
+	
+	
+	keywords:53 -->lower case 
+	
+	
+	
+	Identifiers:
+		
+	any name in java will call it as identifier
+
+	a-z
+	A-Z
+	0-9
+	$
+	_
+		
+variables:
+===========
+		name of a memory location
+
+	local 
+	global 
+
+syntax:	
+	
+	datatype varname=value;
+	
+	
+	empid,ename,esal,eadd,eage,....
+	
+		PDT 			NPDT
+		8 PDT			String,array,emp,....
+	
+	
+		byte	1 byte		-128 to 127
+		short	2 bytes		-32768 to 32767
+		int		4 			-2147483768 to 2147483767
+		long	8			-2 power 63 	-2 power 63  
+		
+		float	4			5 to 6  19000.78293920737f
+		double	8			14-15 
+			
+		char	2 bytes			'M' unicode-18 
+		boolean	1 bit		true,false
+							byte age=32
+	
+							long age=32
+
+
+A-65	english
+a-97
+
+
+
+global varibles-->static,instance
+
+syntax
+		when there is static keyword that is static variable
+		if there is no static keyword that is instance variable
+
+memory
+	static properties will get one time memory at the time class loading into JVM
+	instance properties will get memory for every object creation
+	
+			A classname objname=new classname();
+				A obj=new A();
+				A obj1=new A();
+
+access
+		instance properties can be accessed by using obj ref
+		static properties can be accessed by using classname
+
+usage 
+
+				orgname="NEC",countryName,cityName,schoolname,collegename,....static
+				
+				aadharno,contact,pan,accno,....instance
+
+
+
