@@ -236,3 +236,278 @@ method Overriding:
 
 
 final
+
+public	:every where
+private	:only inside the class
+default :package level scope
+protected:defautlt+outside the package inside the child class
+
+constructor
+
+this	used to represent current class properties(variable,method,constructor,object)
+super	used to represent parent class properties(variable,method,constructor)
+
+
+
+
+
+
+encapsulation
+	
+		wrapping the data and methods together 
+		
+
+exception handling
+
+
+try,catch,finally,throw,throws
+
+
+throwable 
+
+
+
+
+
+
+
+
+collections
+=============
+
+int a=123;
+a=124;
+
+
+	arrays
+	int ids[]={12,21,67,65,9,67};
+	//index 0,1,2,3,..
+
+
+1)array size fixed
+2)only homogeneous
+3)no utility methods
+
+
+collections framework
+
+
+
+1)collections are not fixed size /growable in nature
+2)both homogeneous/haterogeneous
+3)lots of utility methods
+
+mysql
+create database NEC;
+use NEC;
+#@sql
+#DDL :create,alter,drop,truncate,rename
+#DML :insert,update,delete
+#DRl :select
+
+create table products(productid int,productName varchar(15),productprice int,productCategory varchar(15));
+describe products;
+alter table products add productQuantity int;
+alter table products drop productQuantity;
+alter table products change productid pid int;
+alter table products rename to products_info;#renaming table name 
+truncate table products_info;#rows/data/records
+drop table products_info;
+insert into products values(123,'samsung',34000,'electronics');
+insert into products values(124,'dell',38000,'electronics');
+insert into products values(125,'tiger',44000,'toys');
+insert into products values(126,'dal',22866,'groceries');
+insert into products values(127,'apple',52000,'fruits');
+insert into products(productid,productname)values(128,'mi');
+select * from products;
+update products set productprice=44000 where productid=123;
+
+delete from products where productCategory='fruits';
+
+select productid,productname from products;
+
+select * from products where productprice between 10000 and 35000;
+select * from products where productprice >35000;
+select max(productprice) from products;
+select min(productprice) from products;
+select avg(productprice) from products;
+select sum(productprice) from products;
+select count(productprice) from products;
+
+
+insert into products values(123,'samsung',34000,'electronics');
+
+create table employees(empid int primary key,ename varchar(12) not null,esal int check(esal>1000),edesg varchar(10));
+
+#notnull,check,unique,pk,fk 
+
+insert into employees values(111,'suresh',9000,"developer");
+insert into employees values(112,'naresh',12000,"trainer");
+insert into employees values(114,'sandeep',500,"admin");
+insert into employees(ename,esal) values('hitesh',18000);
+select * from employees;
+
+servlets
+=========
+	web application--url-
+
+sun micro system
+
+javax.servlet.http
+
+1)implements Servlet	5 methods-->init,service,destroy,getServletInfo,getServletConfig
+2)extends GenericServlet
+3)extends HttpServlet
+										@Webservlet
+	class Login implements Servlet
+	{
+	
+	}
+	class Login extends GenericServlet
+	{
+	
+	}
+	class Login extends HttpServlet -->12    1000*12=12000
+	{
+	
+	}
+	
+	server
+	
+		application server:apache=tomcat
+	
+	web.xml
+	
+	server-->servletcontainer
+
+session tracking
+techniques
+
+1.cookies			Cookie ck=new Cookie();addCookie("key","")--->setMaxAge		-->getCokies
+2.httpsession			
+3.url rewriting
+4.hidden form fields
+
+http-->stateless protocol
+
+Jsp
+-->java server pages 
+
+	1)server 
+	2)java & Html
+	
+	JSP-->
+		1)refresh the browser
+		2)java & html together
+		
+		implicit object
+		
+		
+		
+		
+		
+		request
+		response
+		out
+		
+	jsp
+	<h1>
+	
+	<%
+	
+	
+	%>
+	
+	
+		
+spring framework
+=================
+
+	spring is non-invasive framework,which is used to create light weight  and loosley coupled application.
+	
+		20+ modules
+	
+
+
+			invasive
+						struts--it will force the developer to implement predefined api-->heavy weight 
+			non-invasive
+							it will never force to the developer -->light weight 
+				spring,hibernate
+
+	loosley coupled 
+	tightly coupled
+
+				EJB-->heavy weight -->rod johnson
+
+		2003-->interface21-->spring 1.x 
+		
+							 spring 6.x
+
+
+class A
+{
+	A(String name){
+	
+	}
+
+}
+
+
+class B
+{
+
+public void m1()
+{		
+	A a=new A();
+	
+}
+
+
+
+}
+1000 child 
+
+spring core module/IOC/Dependency injection module
+
+jars
+
+	loosley coupled 
+
+
+setter injection 
+constructor injection
+autowiring 
+
+
+			A
+
+						spring contianer --->Beanfactory,ApplicationContext
+
+
+			B
+																				configuration
+container																	1)xml
+																			2)annotation
+		object life cycle													3)java config				
+			creation of object
+			wiring 
+			configuring
+			destroying
+		
+		
+		
+		
+		
+		
+		
+
+
+
+
+
+jpa hibernate
+
+
+spring boot
+
