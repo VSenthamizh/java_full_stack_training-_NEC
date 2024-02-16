@@ -487,7 +487,7 @@ autowiring
 
 			B
 																				configuration
-container																	1)xml
+container						beans,bean,property,constructor-arg			1)xml
 																			2)annotation
 		object life cycle													3)java config				
 			creation of object
@@ -497,17 +497,134 @@ container																	1)xml
 		
 		
 		
-		
+NOTE:
+	spring has given annotations for user defined classes but not for predefined classes
 		
 		
 		
 
+@Component
+@Service
+@Repository
+
+@Configuration
+@ComponentScan
+@Autowired
+@Scope
+@Qualifier
+@Entity
+@GeneratedValue
+@Id
+@Column
+@Table
+@OnetoOne
+@OnetoMany
+@Manytomany
 
 
+java configuration-->
 
+		@Bean
+		public DataSource getDataSource()
+		{
+		 return datasource;
+		}
+
+5 steps
+	loading the driver class
+	creating the connection
+	creating statement
+	executing query
+	close the connection
 
 jpa hibernate
 
+	java persistance api
+	
+			-->no table creation
+			-->no querys
+			-->cache 
+			-->no exception handling 
+			-->JPQl
+
+JPA		-->specification
+ORM-->hibernate,eclipselink,toplink,ibatis,...
+
+Object
+
+
+Mysql
+
+spring + JPA(hibernate)
+		case study	
+		hibernate non-invasive framework
+
+spring mvc   
+
+
+		mvc -->
+		spring mvc-->front controller-->DispatcherServlet
+
+@Controller
+@RequestMapping(  method=MethodType,GET/POST/PUT/DELETE)
+
+	spring java config
+
+Layered Architecture:-
+=====================
+			presentation/UI layer
+					UI code
+			
+			service /business layer
+					business logic
+	
+			Repository/DAO alyer
+				DB interaction code
+				
+				
+				
 
 spring boot
+springboot-->Auto configuration
+
+
+
+Spring Boot
+============
+
+1)Auto configuration
+2)embeded server
+3)starters
+4)actuators
+
+
+STS
+
+	3.x
+
+
+
+
+
+
+server.port=8586
+spring.datasource.url=jdbc:mysql://localhost:3306/hpe
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.username=root
+spring.datasource.password=rpsconsulting
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
+spring.jpa.hibernate.ddl-auto=create
+#spring.security.user.name=nec
+#spring.security.user.password=nec123
+
+
+
+
+
+
+
+
+
+
 
