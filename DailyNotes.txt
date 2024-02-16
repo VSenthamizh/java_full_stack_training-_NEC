@@ -601,11 +601,40 @@ Spring Boot
 STS
 
 	3.x
+	
+	webservices:communication between two interoperable applications
+
+			REST 
+			
+							axis atm	<---> bank
+			
+				sbi			
+
+						EJB/RMI/SP   RPC-->c/C++  DCOM-->.net  corba--
+	webservices
+					SOAP
+					REST
+					
+					
+	ProductManagmentApp
+
+	1)Add Product
+	2)update Product
+	3)delete product
+	4)get Product
+	5)getAll products
+	6)get All Products between prices
+	7)get All products by category
 
 
 
-
-
+	
+			<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+						
+						
 
 server.port=8586
 spring.datasource.url=jdbc:mysql://localhost:3306/hpe
